@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense app</title>
+    <link rel="stylesheet" href="expe.css">
+    <link rel="stylesheet"href="css/all.min.css" >
+</head>
+<body>
+    <div class="wrapper">
+        <div class="showcase-header">
+            <h2>Expense tracker</h2>
+            <h3>Add a New Item:</h3>
+        </div>
+            <div class="showcase-inner">
+                <div class="msg"></div>
+                <div class="input_name">
+                   <label for="name">Name:</label>
+                   <input type="text" id="name" placeholder="Where was the expense made.."><br><br>
+                </div>
+                <div class="date_amount">
+                    <label for="date" class="datez">Date:</label>
+                <div class="date-picker">
+                  <div class="selected-date">
+              <i class="far fa-calendar-alt"></i>
+                    </div>
+                    <div class="dates">
+                    <div class="month">
+                    <div class="arrow prev-month">&lt;</div>
+                        <div class="mth"></div>
+                        <div class="arrow next-month">&gt;</div>
+                    </div> 
+                    <div class="days"></div>  
+                    </div>
+                </div>
+                <div class="input_amount">
+                   <label for="amount">Amount:</label>
+                   <input type="text" id="amount"placeholder="KSH"></br><br>
+                </div>
+            </div>
+                <button id="submit" type="submit">Add Expense</button>
+            </div>  
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                           <th>Name</th>
+                           <th>Amount</th>
+                           <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table_body">
+                          
+                   </tbody>  
+                </table>
+            </section>  
+        </div>
+    <script src="expe.js"></script>
+    <script src="expe2.js"></script>
+</body>
+</html>
